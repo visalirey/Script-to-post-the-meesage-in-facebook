@@ -1,0 +1,8 @@
+import facebook
+import os
+import json
+
+page_access_token = "EAACL0gny2kIBAJUSN3VebZBGZB3K5lyMTc6D9pgQB4J35ha9IiJeZBxUh2JSJ99UY9wZCLXVoi8uffemq0AZBcsOErCGbDmbUVuylm0WfPn5amGCopRnGzL1ZBUML5Larm2RX29w2ZAQXyOekcQfa1TDpuCCtZAprFUGhUHCZCtXBlpmO81yFdyjVHqaJphsl2k3p2G6nb37mt3GLJ6tBZAEc5CRnZBzJH99rtxbUrRelZAbVgw9KZBG6MR5GIFtZC8ZBK5pWsZD"
+graph = facebook.GraphAPI(page_access_token)
+facebook_page_id = "153734226303554"
+graph.put_object(facebook_page_id, "feed", message='Hello Friends')
